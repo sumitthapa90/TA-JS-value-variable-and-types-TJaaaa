@@ -10,6 +10,24 @@ Write a program that asks the user his/her age and check for the following condi
 - `if` the age is greater than 55 then print the message " You are too old to participate in the marthon".
 👇
 */
+let age = prompt("enter your age");
+
+switch (true) {
+  case 12 < age < 55:
+    alert("You can participate in the marathon");
+    break;
+  case 4 < age < 11:
+    alert("You are too young to participate in the marathon");
+    break;
+  case age > 4:
+    alert("You are too young to participate in the marathon");
+    break;
+  case age > 55:
+    alert("You are too young to participate in the marathon");
+    break;
+  default:
+    alert("somthging is wrong");
+}
 
 // Loops
 /*
@@ -27,6 +45,14 @@ Program to calculate the sum of first n natural numbers(1,2,3...n are known as n
 👇
 */
 // [Your code goes here]
+
+let n = +prompt("enter a number");
+
+let sum = 0;
+for (let i = 0; i <= n; i++) {
+  sum = sum + i;
+}
+console.log(sum);
 
 /* Switch Statement
 
@@ -67,6 +93,15 @@ Take the value of `marks` (0-100) from user using `prompt` and `alert` the messa
  🎖Write a JavaScript program that takes two `integers` from user (using prompt) and alerts the larger number.
 */
 // [your code goes here]
+
+let numA = +prompt("enter a number");
+let numB = +prompt("enter a number");
+
+if (numA > numB) {
+  alert(numA);
+} else {
+  alert(numB);
+}
 
 /*
 🎖Write a JavaScript conditional statement to find the sign (+, -) of product of three numbers. Take those three numbers from user using `prompt`. Display an alert box with the specified sign.
